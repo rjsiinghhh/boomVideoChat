@@ -31,11 +31,13 @@
   <style>
     #video-grid {
       display: grid;
+      item-align: center;
       grid-template-columns: repeat(auto-fill, 300px);
       grid-auto-rows: 300px;
     }
 
     video {
+
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -44,30 +46,23 @@
 </head>
 <body>
   <!--Navbar -->
-  <nav class="mb-1 navbar navbar-expand-lg navbar-dark orange lighten-1">
-    <a class="navbar-brand" href="#">Boom!</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
-      aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto nav-flex-icons">
-        <li class="nav-item avatar">
-          <a class="nav-link p-0" href="#">
-            <img src="https://imgur.com/a/wFBfDAZ" class="rounded-circle z-depth-0"
-              alt="avatar image" height="35">
-          </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i> Profile </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="#">My account</a>
+            <a class="dropdown-item" href="#">Log out</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -75,8 +70,98 @@
   <!--/.Navbar -->
 
 
+  <!-- Jumbotron -->
+  <div class="card card-image" style="background-image: url(https://i.imgur.com/ILoMhKt.png);">
+    <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+      <div class="py-5">
+
+        <!-- Content -->
+
+        <h2 class="card-title h2 my-4 py-2">Redefining Video Chat?</h2>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis perferendis vitae cumque et quo impedit.</p>
+        <a class="btn peach-gradient"><i class="fas fa-clone left"></i> Sign Up!</a>
+
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
 
 
-  <div id="video-grid"></div>
+
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+
+    <!-- Title -->
+    <h4 class="card-title h4 pb-2"><strong>My adventure</strong></h4>
+
+    <!-- Card image -->
+    <div class="view overlay my-4">
+      <img src="video-grid" class="img-fluid" alt="">
+      <a href="#">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <h5 class="indigo-text h5 mb-4">Photography</h5>
+    <div id="video-grid" </div>
+
+
+
+
+  </div>
+  <!-- Jumbotron -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="#!" class="btn btn-outline-white btn-rounded">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 </body>
 </html>

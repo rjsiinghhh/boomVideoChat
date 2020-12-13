@@ -1,5 +1,5 @@
 *{
-  background-color: #a6a6a6;
+
   font-family: 'Cutive Mono', monospace;
 }
 
@@ -16,4 +16,10 @@ h2 {
 
 #video-grid {
   text-align: center;
+}
+
+
+.logo {
+  text-align: center;
+
 }
